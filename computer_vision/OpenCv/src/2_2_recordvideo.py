@@ -20,7 +20,8 @@ while (cap.isOpened()):
 
         if cv2.waitKey(1) & 0xFF == ord('q'): 
             break
-
+    else:
+        break
 output.release() # clear output memory
 cap.release()  
 cv2.destroyAllWindows() 

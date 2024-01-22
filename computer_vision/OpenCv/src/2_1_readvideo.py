@@ -3,7 +3,7 @@
 import cv2
 
 cap = cv2.VideoCapture(0) # use camera of laptop 
-# cv2.VideoCapture('name_video')  if you want to watch video 
+# cv2.VideoCapture('file_name_video')  if you want to watch video 
 
 print(cap.isOpened()) # check camera or video is open 
 
@@ -14,7 +14,7 @@ while (cap.isOpened()): # while True:
     print(cap.get(cv2.CAP_PROP_FRAME_WIDTH))  # print the width of frame
     print(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) # print the height of fream
 
-    gray =  cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY) # comvert frame to gray
+    gray =  cv2.cvtColor(frame,cv2.COLOR_BGR2BGRA) # comvert frame to gray
     cv2.imshow("frame",gray) 
 
     if cv2.waitKey(1) & 0xFF == ord('q'): # if you bress 'q' -> close camera's task
