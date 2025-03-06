@@ -14,85 +14,86 @@ Các thành phần trong hệ thống xử lý ảnh số
 ## II. Cải thiện ảnh
 ### 1. Khái niệm
 ### 2. Các kỹ thuật xử lý ảnh
-#### Kỹ thuật xử lý trên miền không gian 
-##### Phép toán trên điểm ảnh
-1. đảo ảnh
+#### a. Kỹ thuật xử lý trên miền không gian 
+##### i. Phép toán trên điểm ảnh
+###### - đảo ảnh
 
-2. logarit
+###### - logarit
 
-3. gamma
+###### - gamma
 
-4. ký thuật cắt ngưỡng
+###### - ký thuật cắt ngưỡng
 
-5. lát cắt bit 
+###### - lát cắt bit 
 
-##### Cân bằng histogram
+##### ii. Cân bằng histogram
 
-##### Sử dụng các bộ lọc mịn
-1. bộ lọc trung bình/ trung bình có trọng số
-2. bộ lọc trung vị
-3. bộ lọc min/max
-4. bộ lọc gaussian
-##### Bộ lọc sắc nét / tách biên ảnh
-###### Đạo hàm bậc nhất
-1. Robert 
-2. Sobel
-3. prewith
-4. kirsh
-###### Đạo hàm bậc hai
-1. laplacian và các biến thể
-#### Kỹ thuật xử lý ảnh trên miền tần số
-##### Biến đổi Fourier
-##### Biến đổi Fourier ngược
+#### b. Sử dụng các bộ lọc mịn
+##### i. Phép tích chập 2 chiều
+##### ii. bộ lọc trung bình/ trung bình có trọng số
+##### iii. bộ lọc trung vị
+##### iv. bộ lọc min/max
+##### v. bộ lọc gaussian
+#### c. Bộ lọc sắc nét / tách biên ảnh
+##### i. Đạo hàm bậc nhất
+###### - Robert 
+###### - Sobel
+###### - prewith
+###### - kirsh
+##### ii. Đạo hàm bậc hai
+###### - laplacian và các biến thể
+#### c. Kỹ thuật xử lý ảnh trên miền tần số
+##### i. Biến đổi Fourier
+##### ii. Biến đổi Fourier ngược
 
 ## III. Cải thiện ảnh
 ### 1. Các mô hình nhiễu
-#### Nhiễu Gaussian
-#### Nhiễu Xung
-#### Nhiễu Rayleigh
-#### Nhiễu Erlang(Gammar)
-#### Nhiễu hàm mũ
-#### Nhiễu đồng nhất
+#### a. Nhiễu Gaussian
+#### b. Nhiễu Xung
+#### c. Nhiễu Rayleigh
+#### d. Nhiễu Erlang(Gammar)
+#### e. Nhiễu hàm mũ
+#### f. Nhiễu đồng nhất
 ### 2. Các mô hình cải thiện ảnh
-#### Bộ lọc trung bình
-##### Bộ lọc trung bình số học
-##### Bộ lọc trung bình hình học
-##### Bộ lọc trung bình harmonic
-##### Bộ lọc trung bình contraharmonic
+#### a. Bộ lọc trung bình
+##### i. Bộ lọc trung bình số học
+##### ii. Bộ lọc trung bình hình học
+##### iii. Bộ lọc trung bình harmonic
+##### iv. Bộ lọc trung bình contraharmonic
 
-#### Bộ lọc thống kê
-##### Bộ lọc trung vị
-##### Bộ lọc min
-##### Bộ lọc max
-##### Bộ lọc alpha trimmed
+#### b. Bộ lọc thống kê
+##### i. Bộ lọc trung vị
+##### ii. Bộ lọc min
+##### iii. Bộ lọc max
+##### iv. Bộ lọc alpha trimmed
 
-#### Bộ lọc thích nghi
-##### Bộ lọc trung vị thích nghi
-##### Bộ lọc nhiễu cục bộ thích nghi
+#### c. Bộ lọc thích nghi
+##### i. Bộ lọc trung vị thích nghi
+##### ii. Bộ lọc nhiễu cục bộ thích nghi
 ## IV. Phân đoạn ảnh 
 ### 1. Khái niệm
 ### 2. Phân loại
-#### Phân đoạn ảnh dựa trên sự thay đổi đột ngột về cường độ mức xám
-##### Đạo hàm bậc nhất
+#### a. Phân đoạn ảnh dựa trên sự thay đổi đột ngột về cường độ mức xám
+##### i. Đạo hàm bậc nhất
 ###### - Toán tử robert
 ###### - Toán tử sobel
 ###### - Toán tử prewith
 ###### - Toán tử krisch
-##### Đạo hàm bậc hai
+##### ii. Đạo hàm bậc hai
 ###### - Toán tử laplacian
-#### Phân đoạn ảnh dựa trên các tiêu xác định trước
-##### Kỹ thuật cắt ngưỡng 
+#### b. Phân đoạn ảnh dựa trên các tiêu xác định trước
+##### i. Kỹ thuật cắt ngưỡng 
 ###### - Cắt ngưỡng toàn cục
 ###### - Cắt ngưỡng đa nguồn
 ###### - Cắt ngưỡng thích nghi
-##### Thuộc tính vùng ảnh
+##### ii. Thuộc tính vùng ảnh
 ###### - Nở vùng
 ###### - Tách và gộp vùng
-##### Kỹ thuật phân cụm
+##### iii. Kỹ thuật phân cụm
 ###### - K-mean
 ###### - Mean shift
 ###### - Graph cults
-##### các mô hình học máy
+##### iv. các mô hình học máy
 ###### - Machine learning
 ###### - Deep learning
 ### 3. Mục đích
