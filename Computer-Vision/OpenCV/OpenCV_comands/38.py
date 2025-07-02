@@ -1,13 +1,13 @@
 import numpy as np
 import cv2 as cv
 
-img = cv.imread('pic1.png')
+img = cv.imread('D:/Program_Languages/Python/Computer-Vision/OpenCV/lena.png')
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 corners = cv.goodFeaturesToTrack(gray, 100, 0.01, 10)
 
-corners = np.int0(corners)
+corners = np.int8(corners)
 
 for i in corners:
     x, y = i.ravel()

@@ -1,7 +1,7 @@
 import numpy as np
 import cv2 as cv
 
-img = cv.imread('chessboard_img.png')
+img = cv.imread('D:/Program_Languages/Python/Computer-Vision/OpenCV/lena.png')
 
 cv.imshow('img', img)
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)

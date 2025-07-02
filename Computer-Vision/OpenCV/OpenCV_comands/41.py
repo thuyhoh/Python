@@ -1,6 +1,6 @@
 import numpy as np
 import cv2 as cv
-cap = cv.VideoCapture('slow_traffic_small.mp4')
+cap = cv.VideoCapture('D:/Program_Languages/Python/Computer-Vision/OpenCV/Alpacas.mp4')
 # take first frame of the video
 ret, frame = cap.read()
 # setup initial location of window
@@ -27,7 +27,7 @@ while(1):
         # Draw it on image
         pts = cv.boxPoints(ret)
         print(pts)
-        pts = np.int0(pts)
+        pts = np.int8(pts)
         final_image = cv.polylines(frame, [pts], True, (0, 255, 0), 2)
         #x,y,w,h = track_window
         #final_image = cv.rectangle(frame, (x,y), (x+w, y+h), 255, 3)

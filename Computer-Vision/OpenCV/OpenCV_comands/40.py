@@ -1,6 +1,6 @@
 import numpy as np
 import cv2 as cv
-cap = cv.VideoCapture('slow_traffic_small.mp4')
+cap = cv.('D:/Program_Languages/Python/Computer-Vision/OpenCV/Alpacas.mp4')
 # take first frame of the video
 ret, frame = cap.read()
 # setup initial location of window

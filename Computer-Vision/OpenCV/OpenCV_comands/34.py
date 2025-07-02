@@ -1,6 +1,6 @@
 import numpy as np
 import cv2 as cv
-img = cv.imread('smarties.png')
+img = cv.imread('D:/Program_Languages/Python/Computer-Vision/OpenCV/lena.png')
 output = img.copy()
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 gray = cv.medianBlur(gray, 5)
